@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 import time
 
-model = keras.models.load_model('model/lstm_model.h5', compile=False)
+model = keras.models.load_model('model/lstm_model.h5', compile=False, safe_mode=False)
 tokenizer = joblib.load('model/tokenizer.pkl')
 
 st.header('Roblox Playstore Reviews Sentiment Analysis (Bahasa Indonesia)')
